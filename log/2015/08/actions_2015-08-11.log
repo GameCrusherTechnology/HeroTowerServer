@@ -1,0 +1,4 @@
+[error][2015-08-11 13:56:48-45330300] game exception happens while execute action:INFO[gameuid=12,code:1011]	message:INFO[gameuid=12,code:1011]	message:composeitemId piece is not enough 70101
+[error][2015-08-11 15:14:07-44743800] game exception happens while execute action:INFO[gameuid=14,code:1011]	message:INFO[gameuid=14,code:1011]	message:hero 140 do not have the soldier 30101
+[error][2015-08-11 15:14:32-28799100] game exception happens while execute action:INFO[gameuid=14,code:1011]	message:INFO[gameuid=14,code:1011]	message:hero 140 do not have the soldier 30101
+[error][2015-08-11 16:06:48-56125700] game exception happens while execute action:INFO[gameuid=14,code:1011]	message:INFO[gameuid=14,code:1011]	message:composeitemId piece is not enough 70001

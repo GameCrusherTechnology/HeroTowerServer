@@ -1,0 +1,3 @@
+[error][2015-08-10 15:39:05-36154600] game exception happens while execute action:INFO[gameuid=5,code:1001]	message:INFO[gameuid=5,code:1001]	message:gameuid[0] is error
+[error][2015-08-10 15:39:41-91414400] game exception happens while execute action:INFO[gameuid=5,code:1011]	message:INFO[gameuid=5,code:1011]	message:user  not enough coin: 1000 
+[error][2015-08-10 15:40:53-21167600] game exception happens while execute action:INFO[gameuid=6,code:1001]	message:INFO[gameuid=6,code:1001]	message:gameuid[0] is error

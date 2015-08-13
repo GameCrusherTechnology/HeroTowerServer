@@ -1,0 +1,170 @@
+[error][2015-07-06 10:08:40-67506900] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_trade (gameuid,product_id,platform,orderId,purchaseState,purchasetime,status) values(1,'littleCoin','andriod','1436148520',0,1420546046853,1)
+Error: 'Duplicate entry \'0\' for key \'PRIMARY\''
+Errno: 1062
+[error][2015-07-06 10:08:40-67624200] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\TradeLogManager.class.php(27): ManagerBase->insertDB(Array)
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(94): TradeLogManager->insert(Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-07-06 10:12:08-39626700] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_trade (gameuid,product_id,platform,orderId,purchaseState,purchasetime,status) values(1,'middleCoin','andriod','1436148728',0,1420546046853,1)
+Error: 'Duplicate entry \'0\' for key \'PRIMARY\''
+Errno: 1062
+[error][2015-07-06 10:12:08-39720200] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\TradeLogManager.class.php(27): ManagerBase->insertDB(Array)
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(94): TradeLogManager->insert(Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-07-06 10:12:52-8621200] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_trade (gameuid,product_id,platform,orderId,purchaseState,purchasetime,status) values(1,'middleCoin','andriod','1436148771',0,1420546046853,1)
+Error: 'Duplicate entry \'0\' for key \'PRIMARY\''
+Errno: 1062
+[error][2015-07-06 10:12:52-8729800] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\TradeLogManager.class.php(27): ManagerBase->insertDB(Array)
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(94): TradeLogManager->insert(Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-07-06 10:16:40-46789500] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_trade (gameuid,product_id,platform,orderId,purchaseState,purchasetime,status) values(1,'littleCoin','andriod','1436149000',0,1420546046853,1)
+Error: 'Duplicate entry \'0\' for key \'PRIMARY\''
+Errno: 1062
+[error][2015-07-06 10:16:40-46883900] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\TradeLogManager.class.php(27): ManagerBase->insertDB(Array)
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(94): TradeLogManager->insert(Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-07-06 10:16:43-83921300] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_trade (gameuid,product_id,platform,orderId,purchaseState,purchasetime,status) values(1,'littleCoin','andriod','1436149003',0,1420546046853,1)
+Error: 'Duplicate entry \'0\' for key \'PRIMARY\''
+Errno: 1062
+[error][2015-07-06 10:16:43-84021600] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\TradeLogManager.class.php(27): ManagerBase->insertDB(Array)
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(94): TradeLogManager->insert(Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-07-06 14:36:39-48118100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:UPDATE character_account_0 SET characteruid='10',exp='0',name='sheshou_1',item_id='10001',soldiers='',soldierUpdate='',skills='30000',vip=10 WHERE 1=1  AND characteruid=10
+Error: 'Unknown column \'vip\' in \'field list\''
+Errno: 1054
+[error][2015-07-06 14:36:39-48215100] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'UPDATE characte...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(119): MooMySQL->query('UPDATE characte...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(314): DBHelper2->query('UPDATE characte...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(88): DBHelper2->updatetable('character_accou...', Array, '1=1  AND charac...')
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(53): TCUpdateRequest->updateDb()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(79): TCUpdateRequest->execute()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(74): ManagerBase->updateDB(10, Array, Array, true)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(93): CharacterAccountManager->updateUserStatus(10, Array)
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#11 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2015-07-06 14:36:57-11305100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:UPDATE character_account_0 SET characteruid='10',exp='0',name='sheshou_1',item_id='10001',soldiers='',soldierUpdate='',skills='30000',vip=60 WHERE 1=1  AND characteruid=10
+Error: 'Unknown column \'vip\' in \'field list\''
+Errno: 1054
+[error][2015-07-06 14:36:57-11402900] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'UPDATE characte...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(119): MooMySQL->query('UPDATE characte...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(314): DBHelper2->query('UPDATE characte...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(88): DBHelper2->updatetable('character_accou...', Array, '1=1  AND charac...')
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(53): TCUpdateRequest->updateDb()
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(79): TCUpdateRequest->execute()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(74): ManagerBase->updateDB(10, Array, Array, true)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\pay\GooglePayForGems.php(93): CharacterAccountManager->updateUserStatus(10, Array)
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): GooglePayForGems->_exec()
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('pay', 'GooglePayForGem...', Array)
+#11 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'pay', 'GooglePayForGem...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}

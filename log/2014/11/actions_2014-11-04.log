@@ -1,0 +1,2 @@
+[error][2014-11-04 15:35:58-24937300] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id not enough characterId: 2 maxindex 1
+[error][2014-11-04 15:35:58-30255300] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id not enough characterId: 2 maxindex 1

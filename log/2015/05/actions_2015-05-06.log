@@ -1,0 +1,7 @@
+[error][2015-05-06 14:13:25-25613800] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id not enough characterId: 2 maxindex 1
+[error][2015-05-06 15:32:45-27550800] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id not enough characterId: 2 maxindex 1
+[error][2015-05-06 15:54:14-52211200] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:user  not enough gem: 1000 
+[error][2015-05-06 15:54:34-64166100] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:user  not enough gem: 1000 
+[error][2015-05-06 16:16:06-21062200] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id is exist characterId: 11 
+[error][2015-05-06 16:26:41-44369400] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:composeitemId piece is not enough 70006
+[error][2015-05-06 16:26:41-81513500] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:composeitemId piece is not enough 70002

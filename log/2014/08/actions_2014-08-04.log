@@ -1,0 +1,149 @@
+[error][2014-08-04 15:03:01-86722500] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO character_account_0 (characteruid,exp,name,item_id) values(11,0,'super_man_01',10001)
+Error: 'Duplicate entry \'11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-08-04 15:03:01-86783100] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO cha...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO cha...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO cha...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(88): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(30): CharacterAccountManager->createCharacterAccount(11, 'super_man_01', 10001)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-08-04 15:03:17-17665800] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO character_account_0 (characteruid,exp,name,item_id) values(11,0,'super_man_01',10001)
+Error: 'Duplicate entry \'11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-08-04 15:03:17-17710400] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO cha...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO cha...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO cha...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(88): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(30): CharacterAccountManager->createCharacterAccount(11, 'super_man_01', 10001)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-08-04 15:03:30-10535600] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO character_account_0 (characteruid,exp,name,item_id) values(11,0,'super_man_01',10001)
+Error: 'Duplicate entry \'11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-08-04 15:03:30-10579200] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO cha...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO cha...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO cha...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(88): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(30): CharacterAccountManager->createCharacterAccount(11, 'super_man_01', 10001)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-08-04 15:08:37-84464200] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO character_account_0 (characteruid,exp,name,item_id) values(11,0,'super_man_01',10002)
+Error: 'Duplicate entry \'11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-08-04 15:08:37-84519000] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO cha...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO cha...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO cha...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(88): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(30): CharacterAccountManager->createCharacterAccount(11, 'super_man_01', 10002)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-08-04 15:10:41-43269100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO character_account_0 (characteruid,exp,name,item_id) values(11,0,'super_man_01',10001)
+Error: 'Duplicate entry \'11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-08-04 15:10:41-43320300] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO cha...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO cha...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO cha...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(88): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(30): CharacterAccountManager->createCharacterAccount(11, 'super_man_01', 10001)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-08-04 15:18:29-4540700] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_1  where 1=1  AND characteruid=11
+Error: 'Table \'herotower.character_account_1\' doesn\'t exist'
+Errno: 1146
+[error][2014-08-04 15:18:29-4595000] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(11, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(27): CharacterAccountManager->getCharacterAccount(11)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-04 15:24:00-13938200] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id is exist characterId: 11 
+[error][2014-08-04 15:37:14-55085900] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id is exist characterId: 11 
+[error][2014-08-04 15:38:27-16507300] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id is exist characterId: 11 
+[error][2014-08-04 15:42:43-71889000] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id is exist characterId: 11 

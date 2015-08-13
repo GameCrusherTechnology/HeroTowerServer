@@ -1,0 +1,25 @@
+[error][2015-01-12 21:31:39-99591100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_11  where 1=1  AND characteruid=11
+Error: 'Table \'herotower.character_account_11\' doesn\'t exist'
+Errno: 1146
+[error][2015-01-12 21:31:40-1791200] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(11, Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\user\UserCreatCharacter.php(27): CharacterAccountManager->getCharacterAccount(11)
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserCreatCharacter->_exec()
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserCreatCharac...', Array)
+#11 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserCreatCharac...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}

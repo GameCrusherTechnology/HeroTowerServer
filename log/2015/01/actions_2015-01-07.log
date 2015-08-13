@@ -1,0 +1,307 @@
+[error][2015-01-07 10:07:18-75711600] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:user11 already have clan 
+[error][2015-01-07 10:07:38-56276400] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:user11 already have clan 
+[error][2015-01-07 10:41:37-4832700] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT data_id,name,adminId,clanMessage,boss,level from clan_info_2  where 1=1  AND data_id=1002
+Error: 'Unknown column \'clanMessage\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 10:41:37-4954000] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT data_id,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT data_id,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT data_id,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT data_id,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(19): ManagerBase->getFromDb(1002, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(51): ClanManager->getClanInfo(1002)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\GetClanList.php(8): ClanManager->getClans()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): GetClanList->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'GetClanList', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'GetClanList', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 10:42:49-40891000] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT data_id,name,adminId,clanMessage,boss,level from clan_info_2  where 1=1  AND data_id=1002
+Error: 'Unknown column \'clanMessage\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 10:42:49-40961200] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT data_id,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT data_id,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT data_id,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT data_id,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(19): ManagerBase->getFromDb(1002, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(51): ClanManager->getClanInfo(1002)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\GetClanList.php(8): ClanManager->getClans()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): GetClanList->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'GetClanList', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'GetClanList', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 10:45:51-9828600] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT data_id,name,adminId,clanMessage,boss,level from clan_info_2  where 1=1  AND data_id=1002
+Error: 'Unknown column \'clanMessage\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 10:45:51-9878700] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT data_id,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT data_id,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT data_id,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT data_id,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(19): ManagerBase->getFromDb(1002, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(51): ClanManager->getClanInfo(1002)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\GetClanList.php(8): ClanManager->getClans()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): GetClanList->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'GetClanList', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'GetClanList', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 10:46:16-29820900] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT data_id,name,adminId,clanMessage,boss,level from clan_info_2  where 1=1  AND data_id=1002
+Error: 'Unknown column \'clanMessage\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 10:46:16-29881000] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT data_id,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT data_id,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT data_id,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT data_id,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(19): ManagerBase->getFromDb(1002, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(51): ClanManager->getClanInfo(1002)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\GetClanList.php(8): ClanManager->getClans()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): GetClanList->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'GetClanList', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'GetClanList', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 10:50:12-6854400] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_2 (data_id,gameuid) values(1002,11)
+Error: 'Duplicate entry \'1002-11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2015-01-07 10:50:12-6917300] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(12): ManagerBase->insertDB(Array, 2)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\JoinClan.php(23): UserClanManager->creatUserClan(11, 1002)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): JoinClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'JoinClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'JoinClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-01-07 10:56:21-80818600] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT data_id,name,adminId,clanMessage,boss,level from clan_info_2  where 1=1  AND data_id=1002
+Error: 'Unknown column \'clanMessage\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 10:56:21-81848500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT data_id,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT data_id,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT data_id,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT data_id,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(19): ManagerBase->getFromDb(1002, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(51): ClanManager->getClanInfo(1002)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\GetClanList.php(8): ClanManager->getClans()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): GetClanList->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'GetClanList', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'GetClanList', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 11:03:41-82795300] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT data_id,name,adminId,clanMessage,boss,level from clan_info_2  where 1=1  AND data_id=1002
+Error: 'Unknown column \'clanMessage\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 11:03:41-82851100] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT data_id,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT data_id,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT data_id,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT data_id,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(19): ManagerBase->getFromDb(1002, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(51): ClanManager->getClanInfo(1002)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\GetClanList.php(8): ClanManager->getClans()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): GetClanList->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'GetClanList', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'GetClanList', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 15:29:46-46578900] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_1 (data_id,gameuid) values(1001,11)
+Error: 'Unknown column \'data_id\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 15:29:46-47636900] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(11): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\CreatClan.php(26): UserClanManager->creatUserClan(11, 1001)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): CreatClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'CreatClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'CreatClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-01-07 15:30:04-3157800] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_1 (data_id,gameuid) values(1002,11)
+Error: 'Unknown column \'data_id\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 15:30:04-3223500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(11): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\CreatClan.php(26): UserClanManager->creatUserClan(11, 1002)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): CreatClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'CreatClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'CreatClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-01-07 16:11:35-67095200] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT gameuid,clan_id,contribution,signTime,bossTime from user_clan_1  where 1=1  AND data_id=1001
+Error: 'Unknown column \'data_id\' in \'where clause\''
+Errno: 1054
+[error][2015-01-07 16:11:35-67155500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT gameuid,...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT gameuid,...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT gameuid,...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT gameuid,...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(34): ManagerBase->getFromDb(1001, Array, NULL)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(88): UserClanManager->deleteClanUsers(1001)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\DissolveClan.php(19): ClanManager->deleteClan(1001)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): DissolveClan->_exec()
+#10 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'DissolveClan', Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'DissolveClan', Array)
+#13 [internal function]: BaseCommand->callCommand(Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#19 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#20 {main}
+[error][2015-01-07 16:28:09-14104600] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:UPDATE clan_info_2 SET data_id=1002,name='GHJTGHF',adminId=11,clanMessage='',boss='',level='0',members=',41',admin='Array' WHERE 1=1  AND data_id=1002
+Error: 'Unknown column \'admin\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 16:28:09-14164200] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'UPDATE clan_inf...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(119): MooMySQL->query('UPDATE clan_inf...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(314): DBHelper2->query('UPDATE clan_inf...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(88): DBHelper2->updatetable('clan_info_2', Array, '1=1  AND data_i...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(53): TCUpdateRequest->updateDb()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(79): TCUpdateRequest->execute()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(80): ManagerBase->updateDB(1002, Array, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\JoinClan.php(27): ClanManager->updateClanInfo(1002, Array)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): JoinClan->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'JoinClan', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'JoinClan', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2015-01-07 16:30:02-95918100] game exception happens while execute action:INFO[gameuid=4,code:1011]	message:INFO[gameuid=4,code:1011]	message:user 41 do not owned clan 1002
+[error][2015-01-07 17:05:19-95481900] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:UPDATE clan_info_2 SET data_id=1002,name='GHJTGHF',adminId=11,clanMessage='',boss='',level='0',members='',admin='Array' WHERE 1=1  AND data_id=1002
+Error: 'Unknown column \'admin\' in \'field list\''
+Errno: 1054
+[error][2015-01-07 17:05:19-95537400] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'UPDATE clan_inf...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(119): MooMySQL->query('UPDATE clan_inf...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(314): DBHelper2->query('UPDATE clan_inf...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(88): DBHelper2->updatetable('clan_info_2', Array, '1=1  AND data_i...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCUpdateRequest.class.php(53): TCUpdateRequest->updateDb()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(79): TCUpdateRequest->execute()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ClanManager.class.php(80): ManagerBase->updateDB(1002, Array, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\SignOutClan.php(30): ClanManager->updateClanInfo(1002, Array)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): SignOutClan->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'SignOutClan', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'SignOutClan', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}

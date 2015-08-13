@@ -1,0 +1,101 @@
+[error][2015-07-22 10:23:29-9228700] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT heroId,score from rating_hero  where 1=1  AND heroId=10
+Error: 'Unknown column \'score\' in \'field list\''
+Errno: 1054
+[error][2015-07-22 10:23:29-12109500] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT heroId,s...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT heroId,s...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT heroId,s...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT heroId,s...')
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\RatingHeroManager.class.php(46): ManagerBase->getFromDb('10', Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\hero\HeroLoginCommand.php(24): RatingHeroManager->getHeroRate('10')
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): HeroLoginCommand->_exec()
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('hero', 'HeroLoginComman...', Array)
+#11 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'hero', 'HeroLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2015-07-22 10:23:54-82551900] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT heroId,score from rating_hero  where 1=1  AND heroId=10
+Error: 'Unknown column \'score\' in \'field list\''
+Errno: 1054
+[error][2015-07-22 10:23:54-82671400] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT heroId,s...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT heroId,s...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT heroId,s...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT heroId,s...')
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\RatingHeroManager.class.php(46): ManagerBase->getFromDb('10', Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\hero\HeroLoginCommand.php(24): RatingHeroManager->getHeroRate('10')
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): HeroLoginCommand->_exec()
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('hero', 'HeroLoginComman...', Array)
+#11 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'hero', 'HeroLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2015-07-22 10:24:11-29397100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT heroId,score from rating_hero  where 1=1  AND heroId=11
+Error: 'Unknown column \'score\' in \'field list\''
+Errno: 1054
+[error][2015-07-22 10:24:11-29513000] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT heroId,s...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT heroId,s...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT heroId,s...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT heroId,s...')
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\RatingHeroManager.class.php(46): ManagerBase->getFromDb('11', Array)
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\hero\HeroLoginCommand.php(24): RatingHeroManager->getHeroRate('11')
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): HeroLoginCommand->_exec()
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('hero', 'HeroLoginComman...', Array)
+#11 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'hero', 'HeroLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2015-07-22 10:26:52-89763100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT *  FROM  `rating_hero` order by `rate` desc LIMIT 100
+Error: 'Unknown column \'rate\' in \'order clause\''
+Errno: 1054
+[error][2015-07-22 10:26:52-89898800] and the stack trace is as below:
+#0 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT *  FROM ...')
+#1 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(142): MooMySQL->query('SELECT *  FROM ...')
+#2 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(147): MooMySQL->getAll('SELECT *  FROM ...')
+#3 E:\workSpace\MyWeb\project\HeroTowerServer\framework\database\DBHelper2.class.php(158): DBHelper2->fetchAll('SELECT *  FROM ...', NULL)
+#4 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\RatingHeroManager.class.php(39): DBHelper2->getAll('SELECT *  FROM ...')
+#5 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\model\RatingHeroManager.class.php(25): RatingHeroManager->regetTop()
+#6 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\hero\HeroLoginCommand.php(25): RatingHeroManager->getTop()
+#7 E:\workSpace\MyWeb\project\HeroTowerServer\libgame\actions\GameActionBase.class.php(85): HeroLoginCommand->_exec()
+#8 E:\workSpace\MyWeb\project\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('hero', 'HeroLoginComman...', Array)
+#10 E:\workSpace\MyWeb\project\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'hero', 'HeroLoginComman...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\MyWeb\project\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\MyWeb\project\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2015-07-22 23:04:40-62266900] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:this battle spec id 20101 do not have 3 star
+[error][2015-07-22 23:04:55-78770800] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:this battle spec id 20101 do not have 3 star

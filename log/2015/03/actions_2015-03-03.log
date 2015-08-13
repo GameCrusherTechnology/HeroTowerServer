@@ -1,0 +1,8 @@
+[error][2015-03-03 11:35:15-18747400] game exception happens while execute action:INFO[gameuid=3,code:1000]	message:INFO[gameuid=3,code:1000]	message:defination of id[70103] not exist in xml,db_type is item
+[error][2015-03-03 11:35:17-29059400] game exception happens while execute action:INFO[gameuid=3,code:1000]	message:INFO[gameuid=3,code:1000]	message:defination of id[70103] not exist in xml,db_type is item
+[error][2015-03-03 11:35:43-53109500] game exception happens while execute action:INFO[gameuid=3,code:1000]	message:INFO[gameuid=3,code:1000]	message:defination of id[70102] not exist in xml,db_type is item
+[error][2015-03-03 19:18:26-80558400] game exception happens while execute action:INFO[gameuid=3,code:1010]	message:INFO[gameuid=3,code:1010]	message:subcount error id 70000 c 
+[error][2015-03-03 19:18:34-39001800] game exception happens while execute action:INFO[gameuid=3,code:1010]	message:INFO[gameuid=3,code:1010]	message:subcount error id 70000 c 
+[error][2015-03-03 19:59:36-69415900] game exception happens while execute action:INFO[gameuid=3,code:1011]	message:INFO[gameuid=3,code:1011]	message:composeitemId piece is not enough 70025
+[error][2015-03-03 19:59:52-67407300] game exception happens while execute action:INFO[gameuid=3,code:1011]	message:INFO[gameuid=3,code:1011]	message:composeitemId piece is not enough 70025
+[error][2015-03-03 20:00:29-4203500] game exception happens while execute action:INFO[gameuid=3,code:1011]	message:INFO[gameuid=3,code:1011]	message:composeitemId piece is not enough 70025

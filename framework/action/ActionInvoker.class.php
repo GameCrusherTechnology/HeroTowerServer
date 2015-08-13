@@ -1,0 +1,87 @@
+<?php
+/**
+ * 用了调用API动作的辅助类。
+ * @example 比如有一个杀虫的动作KillPest,那么需要创建一个类ActionKillPest,该类继承自
+ * ActionBase,实现doAction虚函数。比如该类文件在/usr/www/example/action/下，
+ * 文件名为ActionKillPest.class.php,代码如下
+ * $invoker = new ActionInvoker();
+ * $invoker->setActionPath('/usr/www/example/action');
+ * try{
+ * 		$ret_val = $invoker->invoke('KillPest');
+ * }
+ * catch(exception $e){
+ * 	// do something
+ * }
+ */
+require_once FRAMEWORK . '/action/IAction.class.php';
+
+class ActionInvoker {
+	protected $action_class_path = './';
+	protected $file_ext = '.php';
+	/**
+	 * 构造函数。
+	 * @param string action类的根目录
+	 */
+	public function __construct($action_path){
+		$this->setActionPath($action_path);
+	}
+	
+	/**
+	 * 设置action的目录
+	 * @param string $path
+	 */
+	public function setActionPath($path){
+		if(file_exists($path) && is_dir($path)){
+			$this->action_class_path = $path;
+		}
+		else{
+			throw new ActionException('action class path not exist.',1);
+		}
+	}
+	
+	/**
+	 * 调用api动作
+	 * @param string $module
+	 * @param string $action
+	 * @param mixed $params
+	 * @return mixed
+	 */
+	public function invoke($module,$action,$params = null){
+		$module = preg_replace('/[^A-Z0-9_-]/i', '',$module);
+		$action = preg_replace('/[^A-Z0-9_-]/i', '',$action);
+		$actor = $this->create_actor($module,$action);
+		if($actor instanceof IAction ){
+			return $actor->execute($params);
+		}
+		else{
+			throw new ActionException('action class definition error.',1);
+		}
+	}
+	
+	
+	/**
+	 * 创建一个action
+	 * @param string $module
+	 * @param string $action
+	 * @return ActionBase
+	 */
+	protected function create_actor($module,$action){
+		if(!empty($module)){
+			$file = sprintf('%s%s/%s%s',$this->action_class_path,$module,
+			ucfirst($action) , $this->file_ext);
+		}
+		else{
+			$file = sprintf('%s%s%s',$this->action_class_path,ucfirst($action), $this->file_ext);
+		}
+		if(file_exists($file)){
+			include_once $file;
+			$class =  $action;
+			return new $class;
+		}
+		else{
+			throw new ActionException("Action $module::$action :: $file not exists.",1);
+		}
+	}
+}
+
+?>

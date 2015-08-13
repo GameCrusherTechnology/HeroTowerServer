@@ -1,0 +1,152 @@
+[error][2014-08-03 00:07:20-84963800] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_10  where 1=1  AND characteruid=10
+Error: 'Unknown column \'name\' in \'field list\''
+Errno: 1054
+[error][2014-08-03 00:07:20-85013500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(10, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(33): CharacterAccountManager->getCharacterAccount(10)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-03 00:08:14-99915400] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_10  where 1=1  AND characteruid=10
+Error: 'Unknown column \'name\' in \'field list\''
+Errno: 1054
+[error][2014-08-03 00:08:14-99973900] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(10, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(33): CharacterAccountManager->getCharacterAccount(10)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-03 00:12:59-44970600] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_10  where 1=1  AND characteruid=10
+Error: 'Unknown column \'name\' in \'field list\''
+Errno: 1054
+[error][2014-08-03 00:12:59-45028000] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(10, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(33): CharacterAccountManager->getCharacterAccount(10)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-03 00:13:37-88040100] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_10  where 1=1  AND characteruid=10
+Error: 'Unknown column \'name\' in \'field list\''
+Errno: 1054
+[error][2014-08-03 00:13:37-88087700] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(10, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(33): CharacterAccountManager->getCharacterAccount(10)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-03 00:13:48-44503800] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_10  where 1=1  AND characteruid=10
+Error: 'Unknown column \'name\' in \'field list\''
+Errno: 1054
+[error][2014-08-03 00:13:48-44553700] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(10, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(33): CharacterAccountManager->getCharacterAccount(10)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-03 00:13:56-69436400] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:SELECT characteruid,exp,name,item_id from character_account_10  where 1=1  AND characteruid=10
+Error: 'Unknown column \'name\' in \'field list\''
+Errno: 1054
+[error][2014-08-03 00:13:56-69487800] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'SELECT characte...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(206): MooMySQL->query('SELECT characte...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): MooMySQL->getOne('SELECT characte...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT characte...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(139): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\CharacterAccountManager.class.php(19): ManagerBase->getFromDb(10, Array)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(33): CharacterAccountManager->getCharacterAccount(10)
+#8 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#9 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#11 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#12 [internal function]: BaseCommand->callCommand(Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#18 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#19 {main}
+[error][2014-08-03 00:19:10-22473300] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id not enough characterId: 1 maxindex 0
+[error][2014-08-03 00:53:43-98389900] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id is exist characterId: 11 

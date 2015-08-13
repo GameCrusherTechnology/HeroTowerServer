@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database>
+	<Group id="Character">
+		<Character item_id="10000" name="zhanshi"  	range="78" 	speed="2"	baseLife="100" 	lifeUp="5"	baseAttack="15"	attackUp="2"	attackCycle="30"	armCls="arrow"	runx="60"		runy="123"		attackx="108"	attacky="116"	standx="31"		standy="100"	rectw="138"		recty="142"	/>
+		<Character item_id="10001" name="sheshou"   range="500"	speed="1.6"	baseLife="80"	lifeUp="3"	baseAttack="8"	attackUp="1.5"	attackCycle="40"	armCls="arrow"	runx="49"		runy="114"		attackx="43"	attacky="118"	standx="27"		standy="111"	rectw="133"		recty="128"	/>
+		<Character item_id="10002" name="fashi"    	range="450"	speed="2"	baseLife="90"	lifeUp="4"	baseAttack="20"	attackUp="1.5"	attackCycle="30"	armCls="Sword"	runx="65"		runy="111"		attackx="59"	attacky="154"	standx="60"		standy="105"	rectw="130"		recty="120"	/>
+	</Group>
+	
+	<!-- 精英  120000 +100000 -->
+	<Group id="Battle">
+		<Battle item_id="20000" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+	
+		<Battle item_id="20100" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1"	supMonster="1200:50000:3"/>
+		<Battle item_id="20101" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20102" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20103" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20104" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20105" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20106" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20107" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20108" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20109" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20110" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20111" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20112" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20113" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20114" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20115" name="Spider" mapId="40000"	level="0"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+	
+		
+		<Battle item_id="20200" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20201" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		
+		<Battle item_id="20300" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20301" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		
+		<Battle item_id="20400" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20401" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		
+		<Battle item_id="20500" name="Spider" mapId="40000"	baseMonster="50000:1|50001:1"	supMonster="100:50006:1|200:50007:3|300:50007:3|400:50007:3|500:50007:3|600:50007:3|700:50007:3|800:50007:3|900:50007:3|1000:50007:3|1100:50007:3|1200:50007:3"/>
+		<Battle item_id="20501" name="Spider" />
+		
+		<Battle item_id="20600" name="Spider" />
+		<Battle item_id="20601" name="Spider" />
+		
+		<Battle item_id="20700" name="Spider" />
+		<Battle item_id="20701" name="Spider" />
+	</Group>
+	
+	<Group id="Skill">
+		<Skill item_id="30000" name="attackBuff"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="100"/>
+		<Skill item_id="30001" name="baoshe"   			upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="200"/>
+		<Skill item_id="30002" name="xuanfengzhan"   	upCount="10,20,30,40,50,60,70,80,90"	recycle="300"	range="100"/>
+		<Skill item_id="30003" name="shujiguang"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="900"	range="200"/>
+		<Skill item_id="30004" name="diyuhuo"  			upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="20"/>
+		<Skill item_id="30005" name="fireball"  		upCount="10,20,30,40,50,60,70,80,90"	recycle="300"	range="400"/>
+		<Skill item_id="30006" name="liuxingyu"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="900"	range="200"/>
+		<Skill item_id="30007" name="qiuyan"   			upCount="10,20,30,40,50,60,70,80,90"	recycle="300"	range="300"/>
+		<Skill item_id="30008" name="purpleball"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="300"/>
+		<Skill item_id="30009" name="guangjian"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="450"	range="400"		buffName="thunder"/>
+		<Skill item_id="30010" name="healthBuff"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="100"/>
+		<Skill item_id="30011" name="huimielieyan"  	upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="200"/>
+		<Skill item_id="30012" name="huolian"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="450"	range="200"/>
+		<Skill item_id="30013" name="huoyanjian"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="300"	range="400"		buffName="redBuff"/>
+		<Skill item_id="30014" name="zhiyu"   			upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="100"/>
+		<Skill item_id="30015" name="huoyu"   			upCount="10,20,30,40,50,60,70,80,90"	recycle="900"	range="400"/>
+		<Skill item_id="30016" name="longjuanfeng"   	upCount="10,20,30,40,50,60,70,80,90"	recycle="750"	range="100"/>
+		<Skill item_id="30017" name="jiguangjian"   	upCount="10,20,30,40,50,60,70,80,90"	recycle="450"	range="500"/>
+		<Skill item_id="30018" name="lanyan"   			upCount="10,20,30,40,50,60,70,80,90"	recycle="750"	range="200"/>
+		<Skill item_id="30019" name="liehuozhan"   		upCount="10,20,30,40,50,60,70,80,90"	recycle="450"	range="100"/>
+		<Skill item_id="30020" name="zhangxinlei"   	upCount="10,20,30,40,50,60,70,80,90"	recycle="300"	range="400"/>
+		<Skill item_id="30021" name="lingjiaojian"   	upCount="10,20,30,40,50,60,70,80,90"	recycle="600"	range="500"/>
+		
+		
+	</Group>
+	<Group id="Map">
+		<Map item_id="40000" name="Road_JT"  mapLength="20" />
+	</Group>
+	<Group id="Soldier">
+	
+		<Soldier item_id="50000" name="Spider"   		recycle="60" 	range="37" 		speed="1"	baseLife="30" 	lifeUp="2"	baseAttack="2"	attackUp="2"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30007"		runx="36"		runy="39"		attackx="37"	attacky="40"	standx="22"		standy="36"		rectw="73"		recty="52"	/>
+		<Soldier item_id="50001" name="DragonWhelp"   	recycle="60" 	range="60" 		speed="2"	baseLife="40" 	lifeUp="3"	baseAttack="4"	attackUp="2"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30005"		runx="60"		runy="86"		attackx="71"	attacky="92"	standx="60"		standy="64"		rectw="120"		recty="80"	/>
+		<Soldier item_id="50002" name="Minotaur"   		recycle="90" 	range="93" 		speed="1.4"	baseLife="60" 	lifeUp="5"	baseAttack="5"	attackUp="2"	attackCycle="35"	upCount="10,20,40,80,160"	curSkill="0:30010"		runx="64"		runy="128"		attackx="133"	attacky="161"	standx="30"		standy="119"	rectw="157"		recty="146"	/>
+		<Soldier item_id="50003" name="PoisonousInsect" recycle="60" 	range="66" 		speed="1"	baseLife="40" 	lifeUp="3"	baseAttack="4"	attackUp="2"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30013"		runx="48"		runy="47"		attackx="58"	attacky="51"	standx="46"		standy="31"		rectw="114"		recty="50"	/>
+		<Soldier item_id="50004" name="Hound"   		recycle="90" 	range="100" 	speed="1.6"	baseLife="50" 	lifeUp="3"	baseAttack="5"	attackUp="2"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30002"		runx="89"		runy="142"		attackx="106"	attacky="177"	standx="93"		standy="127"	rectw="206"		recty="164"	/>
+		<Soldier item_id="50005" name="BlackMinotaur"   recycle="90" 	range="120" 	speed="1.4"	baseLife="100" 	lifeUp="5"	baseAttack="6"	attackUp="3"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30000"		runx="135"		runy="128"		attackx="157"	attacky="216"	standx="31"		standy="177"	rectw="305"		recty="158"	/>
+		<Soldier item_id="50006" name="heianwushi"   	recycle="90" 	range="400" 	speed="1.6"	baseLife="30" 	lifeUp="3"	baseAttack="10"	attackUp="3"	attackCycle="45"	upCount="10,20,40,80,160"	curSkill="0:30020"		runx="80"		runy="131"		attackx="78"	attacky="219"	standx="53"		standy="134"	rectw="212"		recty="148"		armCls="fireBullet"/>
+		<Soldier item_id="50007" name="Giant"   		recycle="90" 	range="100" 	speed="1.6"	baseLife="80" 	lifeUp="4"	baseAttack="8"	attackUp="3"	attackCycle="35"	upCount="10,20,40,80,160"	curSkill="0:30002;0:30016"		runx="110"		runy="148"		attackx="180"	attacky="303"	standx="68"		standy="143"	rectw="250"		recty="183"	/>
+		<Soldier item_id="50008" name="Skeleton"   		recycle="90" 	range="100" 	speed="1.5"	baseLife="80" 	lifeUp="4"	baseAttack="10"	attackUp="3"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30009"		runx="46"		runy="103"		attackx="100"	attacky="144"	standx="26"		standy="109"	rectw="106"		recty="120"	/>
+		<Soldier item_id="50009" name="lanmoguai"   	recycle="90" 	range="101" 	speed="1.2"	baseLife="70" 	lifeUp="3"	baseAttack="10"	attackUp="3"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30001"		runx="56"		runy="141"		attackx="131"	attacky="190"	standx="38"		standy="133"	rectw="157"		recty="140"	/>
+		<Soldier item_id="50010" name="Assassin"   		recycle="60" 	range="80" 		speed="2.2"	baseLife="50" 	lifeUp="3"	baseAttack="9"	attackUp="5"	attackCycle="20"	upCount="10,20,40,80,160"	curSkill="0:30019"		runx="80"		runy="99"		attackx="123"	attacky="123"	standx="110"	standy="84"		rectw="119"		recty="144"	/>
+		<Soldier item_id="50011" name="Cyclop"   		recycle="90" 	range="117" 	speed="1.8"	baseLife="80" 	lifeUp="4"	baseAttack="10"	attackUp="3"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30012"		runx="56"		runy="169"		attackx="167"	attacky="192"	standx="36"		standy="168"	rectw="173"		recty="186"	/>
+		<Soldier item_id="50012" name="SkeletonArcher"  recycle="90" 	range="450" 	speed="1.2"	baseLife="50" 	lifeUp="4"	baseAttack="10"	attackUp="4"	attackCycle="45"	upCount="10,20,40,80,160"	curSkill="0:30017"		runx="33"		runy="144"		attackx="64"	attacky="144"	standx="23"		standy="143"	rectw="125"		recty="140"		armCls="arrow"/>
+		<Soldier item_id="50013" name="HellHound"   	recycle="90" 	range="147" 	speed="1.4"	baseLife="80" 	lifeUp="4"	baseAttack="12"	attackUp="4"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30003"		runx="67"		runy="150"		attackx="116"	attacky="171"	standx="66"		standy="144"	rectw="214"		recty="169"	/>
+		<Soldier item_id="50014" name="HellSpider"   	recycle="120" 	range="250" 	speed="1.6"	baseLife="60" 	lifeUp="3"	baseAttack="12"	attackUp="4"	attackCycle="45"	upCount="10,20,40,80,160"	curSkill="0:30008"		runx="81"		runy="176"		attackx="89"	attacky="216"	standx="84"		standy="172"	rectw="183"		recty="200"		armCls="fireBullet"/>
+		<Soldier item_id="50015" name="SkeletonWarrior" recycle="150" 	range="152" 	speed="1.2"	baseLife="100" 	lifeUp="5"	baseAttack="15"	attackUp="5"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30016"		runx="55"		runy="132"		attackx="117"	attacky="263"	standx="37"		standy="143"	rectw="207"		recty="155"	/>
+		<Soldier item_id="50016" name="ToxicMinotaur"   recycle="150" 	range="121" 	speed="1.8"	baseLife="120" 	lifeUp="6"	baseAttack="18"	attackUp="5"	attackCycle="35"	upCount="10,20,40,80,160"	curSkill="0:30000;0:30010"		runx="120"		runy="140"		attackx="130"	attacky="224"	standx="33"		standy="172"	rectw="241"		recty="149"	/>
+		<Soldier item_id="50017" name="DarkKnight"   	recycle="150" 	range="74" 		speed="2"	baseLife="100" 	lifeUp="4"	baseAttack="15"	attackUp="6"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30018"		runx="68"		runy="118"		attackx="131"	attacky="181"	standx="78"		standy="98"		rectw="142"		recty="184"	/>
+		<Soldier item_id="50018" name="DevilGordon"   	recycle="180" 	range="120" 	speed="1.5"	baseLife="150" 	lifeUp="5"	baseAttack="20"	attackUp="8"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30004;0:30019;0:30014"		runx="58"		runy="167"		attackx="97"	attacky="198"	standx="47"		standy="164"	rectw="187"		recty="166"	/>
+		<Soldier item_id="50019" name="SnowInsect"   	recycle="60" 	range="53" 		speed="1"	baseLife="40" 	lifeUp="3"	baseAttack="5"	attackUp="3"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30007"		runx="49"		runy="61"		attackx="53"	attacky="69"	standx="41"		standy="63"		rectw="102"		recty="57"	/>
+		<Soldier item_id="50020" name="xuerenwang"   	recycle="120" 	range="97" 		speed="1.4"	baseLife="80" 	lifeUp="4"	baseAttack="8"	attackUp="5"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30006"		runx="62"		runy="174"		attackx="141"	attacky="181"	standx="38"		standy="160"	rectw="159"		recty="185"	/>
+		<Soldier item_id="50021" name="dunzhanshi"   	recycle="60" 	range="100" 	speed="1.6"	baseLife="100" 	lifeUp="4"	baseAttack="6"	attackUp="3"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30004"		runx="39"		runy="117"		attackx="78"	attacky="168"	standx="46"		standy="117"	rectw="139"		recty="128"	/>
+		<Soldier item_id="50022" name="huangjinsheshou" recycle="60" 	range="350" 	speed="1.5"	baseLife="80" 	lifeUp="3"	baseAttack="7"	attackUp="4"	attackCycle="45"	upCount="10,20,40,80,160"	curSkill="0:30021"		runx="46"		runy="125"		attackx="54"	attacky="127"	standx="20"		standy="127"	rectw="117"		recty="138"		armCls="arrow"/>
+		<Soldier item_id="50023" name="gulingzhanshi"  	recycle="120" 	range="150" 	speed="1.6"	baseLife="120" 	lifeUp="4"	baseAttack="8"	attackUp="5"	attackCycle="20"	upCount="10,20,40,80,160"	curSkill="0:30009;0:30000"		runx="65"		runy="240"		attackx="183"	attacky="255"	standx="40"		standy="223"	rectw="127"		recty="252"	/>
+		<Soldier item_id="50024" name="gulingshou"  	recycle="120" 	range="135" 	speed="2"	baseLife="150" 	lifeUp="5"	baseAttack="9"	attackUp="5"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30014;0:30008"		runx="116"		runy="175"		attackx="90"	attacky="227"	standx="63"		standy="137"	rectw="251"		recty="210"	/>
+		<Soldier item_id="50025" name="gulingwushi"   	recycle="150" 	range="400" 	speed="1.6"	baseLife="100" 	lifeUp="4"	baseAttack="10"	attackUp="6"	attackCycle="45"	upCount="10,20,40,80,160"	curSkill="0:30015;0:30020"		runx="83"		runy="177"		attackx="73"	attacky="184"	standx="53"		standy="166"	rectw="151"		recty="180"		armCls="fireBullet"/>
+		<Soldier item_id="50026" name="xuesezhanshi"   	recycle="150" 	range="180" 	speed="1.6"	baseLife="150" 	lifeUp="4"	baseAttack="12"	attackUp="6"	attackCycle="30"	upCount="10,20,40,80,160"	curSkill="0:30011;0:30019;0:30002"		runx="82"		runy="197"		attackx="210"	attacky="278"	standx="87"		standy="193"	rectw="286"		recty="200"	/>
+	</Group>
+	
+	<Group id="Castle">
+		<Castle item_id="60000" name="dunzhanshi"   	range="50"	baseLife="50"/>
+		<Castle item_id="60001" name="heianwushi"   	range="300"	baseLife="50"/>
+	</Group>
+	<Group id="Piece">
+		 
+		<Piece item_id="70000" name="attackBuff"   		type="skill"	gem="100" coin="10000"	boundItem="30000"/>
+		<Piece item_id="70001" name="baoshe"   			type="skill"	gem="100" coin="10000"	boundItem="30001"/>
+		<Piece item_id="70002" name="xuanfengzhan"   	type="skill"	gem="100" coin="10000"	boundItem="30002"/>
+		<Piece item_id="70003" name="shujiguang"   		type="skill"	gem="100" coin="10000"	boundItem="30003"/>
+		<Piece item_id="70004" name="diyuhuo"  			type="skill"	gem="100" coin="10000"	boundItem="30004"/>
+		<Piece item_id="70005" name="fireball"  		type="skill"	gem="100" coin="10000"	boundItem="30005"/>
+		<Piece item_id="70006" name="liuxingyu"   		type="skill"	gem="100" coin="10000"	boundItem="30006"/>
+		<Piece item_id="70007" name="qiuyan"   			type="skill"	gem="100" coin="10000"	boundItem="30007"/>
+		<Piece item_id="70008" name="purpleball"   		type="skill"	gem="100" coin="10000"	boundItem="30008"/>
+		<Piece item_id="70009" name="guangjian"   		type="skill"	gem="100" coin="10000"	boundItem="30009"/>
+		<Piece item_id="70010" name="healthBuff"   		type="skill"	gem="100" coin="10000"	boundItem="30010"/>
+		<Piece item_id="70011" name="huimielieyan"  	type="skill"	gem="100" coin="10000"	boundItem="30011"/>
+		<Piece item_id="70012" name="huolian"   		type="skill"	gem="100" coin="10000"	boundItem="30012"/>
+		<Piece item_id="70013" name="huoyanjian"   		type="skill"	gem="100" coin="10000"	boundItem="30013"/>
+		<Piece item_id="70014" name="zhiyu"   			type="skill"	gem="100" coin="10000"	boundItem="30014"/>
+		<Piece item_id="70015" name="huoyu"   			type="skill"	gem="100" coin="10000"	boundItem="30015"/>
+		<Piece item_id="70016" name="longjuanfeng"   	type="skill"	gem="100" coin="10000"	boundItem="30016"/>
+		<Piece item_id="70017" name="jiguangjian"   	type="skill"	gem="100" coin="10000"	boundItem="30017"/>
+		<Piece item_id="70018" name="lanyan"   			type="skill"	gem="100" coin="10000"	boundItem="30018"/>
+		<Piece item_id="70019" name="liehuozhan"   		type="skill"	gem="100" coin="10000"	boundItem="30019"/>
+		<Piece item_id="70020" name="zhangxinlei"   	type="skill"	gem="100" coin="10000"	boundItem="30020"/>
+		<Piece item_id="70021" name="lingjiaojian"   	type="skill"	gem="100" coin="10000"	boundItem="30021"/>
+		
+		
+		<Piece item_id="70100" name="Spider"   			type="soldier"	gem="100" coin="10000"	boundItem="50000"/>
+		<Piece item_id="70101" name="DragonWhelp"   	type="soldier"	gem="100" coin="10000"	boundItem="50001"/>
+		<Piece item_id="70102" name="Minotaur"   		type="soldier"	gem="100" coin="10000"	boundItem="50002"/>
+		<Piece item_id="70103" name="PoisonousInsect" 	type="soldier"	gem="100" coin="10000"	boundItem="50003"/>
+		<Piece item_id="70104" name="Hound"   			type="soldier"	gem="100" coin="10000"	boundItem="50004"/>
+		<Piece item_id="70105" name="BlackMinotaur"   	type="soldier"	gem="100" coin="10000"	boundItem="50005"/>
+		<Piece item_id="70106" name="heianwushi"   		type="soldier"	gem="100" coin="10000"	boundItem="50006"/>
+		<Piece item_id="70107" name="Giant"   			type="soldier"	gem="100" coin="10000"	boundItem="50007"/>
+		<Piece item_id="70108" name="Skeleton"   		type="soldier"	gem="100" coin="10000"	boundItem="50008"/>
+		<Piece item_id="70109" name="lanmoguai"   		type="soldier"	gem="100" coin="10000"	boundItem="50009"/>
+		<Piece item_id="70110" name="Assassin"   		type="soldier"	gem="100" coin="10000"	boundItem="50010"/>
+		<Piece item_id="70111" name="Cyclop"   			type="soldier"	gem="100" coin="10000"	boundItem="50011"/>
+		<Piece item_id="70112" name="SkeletonArcher"  	type="soldier"	gem="100" coin="10000"	boundItem="50012"/>
+		<Piece item_id="70113" name="HellHound"   		type="soldier"	gem="100" coin="10000"	boundItem="50013"/>
+		<Piece item_id="70114" name="HellSpider"   		type="soldier"	gem="100" coin="10000"	boundItem="50014"/>
+		<Piece item_id="70115" name="SkeletonWarrior" 	type="soldier"	gem="100" coin="10000"	boundItem="50015"/>
+		<Piece item_id="70116" name="ToxicMinotaur"   	type="soldier"	gem="100" coin="10000"	boundItem="50016"/>
+		<Piece item_id="70117" name="DarkKnight"   		type="soldier"	gem="100" coin="10000"	boundItem="50019"/>
+		<Piece item_id="70118" name="DevilGordon"   	type="soldier"	gem="100" coin="10000"	boundItem="50018"/>
+		<Piece item_id="70119" name="SnowInsect"   		type="soldier"	gem="100" coin="10000"	boundItem="50019"/>
+		<Piece item_id="70120" name="xuerenwang"   		type="soldier"	gem="100" coin="10000"	boundItem="50020"/>
+		<Piece item_id="70121" name="dunzhanshi"   		type="soldier"	gem="100" coin="10000"	boundItem="50021"/>
+		<Piece item_id="70122" name="huangjinsheshou"   type="soldier"	gem="100" coin="10000"	boundItem="50022"/>
+		<Piece item_id="70123" name="gulingzhanshi"  	type="soldier"	gem="100" coin="10000"	boundItem="50023"/>
+		<Piece item_id="70124" name="gulingshou"  		type="soldier"	gem="100" coin="10000"	boundItem="50024"/>
+		<Piece item_id="70125" name="gulingwushi"   	type="soldier"	gem="100" coin="10000"	boundItem="50025"/>
+		<Piece item_id="70126" name="xuesezhanshi"   	type="soldier"	gem="100" coin="10000"	boundItem="50026"/>
+	</Group>
+	<Group id="Item">
+		<Item item_id="80000" name="littleEnergyPotion"   	gem="10" coin="1000"	message="littleEnergyPotionMes"/>
+		<Item item_id="80001" name="largeEnergyPotion"   	gem="20" coin="2000"	message="largeEnergyPotionMes"/>
+		<Item item_id="80002" name="callHelpCard"   	gem="20" coin="2000"	message="largeEnergyPotionMes"/>
+		<Item item_id="80003" name="quickPassCard"   	gem="20" coin="2000"	message="largeEnergyPotionMes"/>
+		
+	</Group>
+</database>

@@ -1,0 +1,3 @@
+[error][2015-08-12 00:22:33-28053000] game exception happens while execute action:INFO[gameuid=15,code:1011]	message:INFO[gameuid=15,code:1011]	message:composeitemId piece is not enough 70001
+[error][2015-08-12 15:04:43-4381000] game exception happens while execute action:INFO[gameuid=16,code:1011]	message:INFO[gameuid=16,code:1011]	message:composeitemId piece is not enough 70005
+[error][2015-08-12 23:28:02-11842000] game exception happens while execute action:INFO[gameuid=18,code:1011]	message:INFO[gameuid=18,code:1011]	message:character id is exist characterId: 180 

@@ -1,0 +1,96 @@
+[error][2014-11-26 20:55:49-24006700] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_0 (data_id,gameuid) values(0,91)
+Error: 'Duplicate entry \'0-91\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-11-26 20:55:49-28483500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(12): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\JoinClan.php(23): UserClanManager->creatUserClan(91, 0)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): JoinClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'JoinClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'JoinClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-11-26 20:57:48-26036400] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_0 (data_id,gameuid) values(0,91)
+Error: 'Duplicate entry \'0-91\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-11-26 20:57:48-26120100] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(12): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\JoinClan.php(23): UserClanManager->creatUserClan(91, 0)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): JoinClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'JoinClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'JoinClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-11-26 21:07:26-78257500] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_2 (data_id,gameuid) values(1002,11)
+Error: 'Duplicate entry \'1002-11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-11-26 21:07:26-78326500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(12): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\JoinClan.php(23): UserClanManager->creatUserClan(11, 1002)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): JoinClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'JoinClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'JoinClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-11-26 21:07:35-85828500] database exception happens while execute sql, error_msg:ErrorMsg:MySQL Query Error
+SQL:INSERT INTO user_clan_2 (data_id,gameuid) values(1002,11)
+Error: 'Duplicate entry \'1002-11\' for key \'PRIMARY\''
+Errno: 1062
+[error][2014-11-26 21:07:35-85893100] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(98): MooMySQL->errorMsg('MySQL Query Err...', 'INSERT INTO use...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(130): MooMySQL->query('INSERT INTO use...')
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(38): DBHelper2->executeNonQuery('INSERT INTO use...')
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCInsertRequest.class.php(9): TCInsertRequest->_exec()
+#4 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\ManagerBase.class.php(98): TCInsertRequest->execute()
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UserClanManager.class.php(12): ManagerBase->insertDB(Array)
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\clan\JoinClan.php(23): UserClanManager->creatUserClan(11, 1002)
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): JoinClan->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('clan', 'JoinClan', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'clan', 'JoinClan', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}

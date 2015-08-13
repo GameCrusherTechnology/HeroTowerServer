@@ -1,0 +1,69 @@
+[error][2014-10-13 14:00:35-19190100] database exception happens while execute sql, error_msg:ErrorMsg:Can not connect to MySQL server
+Error: NULL
+Errno: NULL
+[error][2014-10-13 14:00:35-20260000] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(44): MooMySQL->errorMsg('Can not connect...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(394): MooMySQL->connect('127.0.0.1', 'root', '19870530', false, 'utf8', false)
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): DBHelper2->getConnection()
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT uid,game...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UidGameuidMapManager.class.php(16): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(9): UidGameuidMapManager->getGameuid('super_man_01')
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-10-13 14:01:11-18790500] database exception happens while execute sql, error_msg:ErrorMsg:Can not connect to MySQL server
+Error: NULL
+Errno: NULL
+[error][2014-10-13 14:01:11-18843500] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(44): MooMySQL->errorMsg('Can not connect...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(394): MooMySQL->connect('127.0.0.1', 'root', '19870530', false, 'utf8', false)
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): DBHelper2->getConnection()
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT uid,game...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UidGameuidMapManager.class.php(16): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(9): UidGameuidMapManager->getGameuid('super_man_01')
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}
+[error][2014-10-13 14:02:07-69697900] database exception happens while execute sql, error_msg:ErrorMsg:Can not connect to MySQL server
+Error: NULL
+Errno: NULL
+[error][2014-10-13 14:02:07-69754900] and the stack trace is as below:
+#0 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\drivers\MooMySQL.class.php(44): MooMySQL->errorMsg('Can not connect...')
+#1 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(394): MooMySQL->connect('127.0.0.1', 'root', '19870530', false, 'utf8', false)
+#2 E:\workSpace\phpworkspace\HeroTowerServer\framework\database\DBHelper2.class.php(248): DBHelper2->getConnection()
+#3 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(19): DBHelper2->fetchOne('SELECT uid,game...')
+#4 E:\workSpace\phpworkspace\HeroTowerServer\framework\db\request\TCGetRequest.class.php(50): TCGetRequest->_exec('fetchOne')
+#5 E:\workSpace\phpworkspace\HeroTowerServer\libgame\model\UidGameuidMapManager.class.php(16): TCGetRequest->fetchOne()
+#6 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\user\UserLoginCommand.php(9): UidGameuidMapManager->getGameuid('super_man_01')
+#7 E:\workSpace\phpworkspace\HeroTowerServer\libgame\actions\GameActionBase.class.php(146): UserLoginCommand->_exec()
+#8 E:\workSpace\phpworkspace\HeroTowerServer\framework\action\ActionInvoker.class.php(54): GameActionBase->execute(Array)
+#9 E:\workSpace\phpworkspace\HeroTowerServer\data\services\common.php(92): ActionInvoker->invoke('user', 'UserLoginComman...', Array)
+#10 E:\workSpace\phpworkspace\HeroTowerServer\data\services\BaseCommand.php(14): API_Base->invoke('callCommand', 'user', 'UserLoginComman...', Array)
+#11 [internal function]: BaseCommand->callCommand(Array)
+#12 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(127): call_user_func_array(Array, Array)
+#13 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\shared\app\php5Executive.php(59): Executive::deferredMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#14 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Actions.php(198): Executive::doMethodCall(Object(MessageBody), Object(BaseCommand), 'callCommand', Array)
+#15 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Filters.php(142): executionAction(Object(MessageBody))
+#16 E:\workSpace\phpworkspace\HeroTowerServer\framework\protocal\amf\core\amf\app\Gateway.php(177): batchProcessFilter(Object(AMFObject))
+#17 E:\workSpace\phpworkspace\HeroTowerServer\data\gateway.php(160): Gateway->service()
+#18 {main}

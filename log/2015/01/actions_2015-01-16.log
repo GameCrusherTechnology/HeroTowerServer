@@ -1,0 +1,2 @@
+[error][2015-01-16 08:40:42-64741100] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:character id not enough characterId: 2 maxindex 1
+[error][2015-01-16 23:55:33-20845900] game exception happens while execute action:INFO[gameuid=1,code:1011]	message:INFO[gameuid=1,code:1011]	message:itemId is no cost  useGem  : 0
